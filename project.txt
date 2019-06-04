@@ -1,0 +1,26 @@
+insert into beat (beat_id,beat_name,beat_url,approved,producer_id,sumbit_date,approvel_date,post_datetime) 
+values (1,'cheap thrills','http//beat.com/cheap.mp3',false,2,'2016-05-26','2017-06-21','2017-06-23 19:52:52'),
+(2,'sorry','http//beat.com/sorry.mp3',true,1,'2014-05-16','2015-02-01','2015-02-06 13:59:34'),
+(3,'him and i','http//beat.com/him.mp3',false,4,'2015-05-28','2017-02-30','2017-03-02 19:42:59'),
+(4,'shape of u','http//beat.com/shape.mp3',true,2,'2012-07-12','2013-06-12','2013-06-13 15:52:52'),
+(5,'attention','http//beat.com/attention.mp3',true,5,'2018-05-16','2019-01-25','2019-02-25 06:34:24'),
+(6,'despacito','http//beat.com/despacito.mp3',false,6,'2016-05-26','2016-06-13','2016-07-16 08:22:52'),
+(7,'closer','http//beat.com/closer.mp3',true,7,'2015-05-26','2017-04-14','2014-04-24 09:53:56');
+
+
+
+ create table beat (beat_id int primary key,beat_name varchar(100),beat_url varchar(100), approved boolean,producer_id int, foreign key (producer_id) references producer(id),sumbit_date Datetime,approvel_date datetime,post_datetime datetime);
+
+
+
+
+
+
+insert into producer (name,email,password,twitter,soundcloud,status)
+    -> values ('tarak','rubetarak@gmail.com','tarak4621','tarak_ruby','tarakdude','none'),
+    -> ('chaitu','chaituG1G2@gmail.com','G1G222','chaitu','chaitu_98','none'),
+    -> ('meghana','mj@gmail.com','G1G333','meghana_varma','meghanajampana','featured'),
+    -> ('keerthana','keerthana@gmail.com','G1G444','keerthana_keerthi','keerthi','none'),
+    -> ('mani','mani@gmail.com','G1G555','mani_kumar','manikumar','notready'),
+    -> ('satya','satya@gmail.com','G1G666','satya_98','satya98','notready'),
+    -> ('bharathi','bharathi@gmail.com','G1G777','bharathi_98','bharathi98','featured');
